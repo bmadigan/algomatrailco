@@ -24,13 +24,13 @@
 define( 'DB_NAME', 'algomatrailco' );
 
 /** Database username */
-define( 'DB_USER', 'postgresql' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
 define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define( 'DB_HOST', '127.0.0.1:5432' );
+define( 'DB_HOST', '127.0.0.1:3307' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -88,7 +88,9 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 if ( ! defined( 'WP_DEBUG' ) ) {
-	define( 'WP_DEBUG', false );
+	define( 'WP_DEBUG', true );
+	define( 'WP_DEBUG_LOG', true );
+	define( 'WP_DEBUG_DISPLAY', true );
 }
 
 /* That's all, stop editing! Happy publishing. */
